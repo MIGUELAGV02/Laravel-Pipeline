@@ -14,7 +14,7 @@ class HomePageTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200)
-                 ->assertViewIs('welcome');
+            ->assertViewIs('welcome');
     }
 
     /**
@@ -25,6 +25,6 @@ class HomePageTest extends TestCase
         $response = $this->get('/');
 
         $response->assertSee('Laravel')
-                 ->assertSee('ecosystem');
+            ->assertSee('ecosystem');
     }
 }
